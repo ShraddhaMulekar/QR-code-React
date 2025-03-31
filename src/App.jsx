@@ -1,4 +1,4 @@
-import Qr from '../components/qr'
+import Qr from '../components/Qr.jsx'
 import './App.css'
 
 function App() {
