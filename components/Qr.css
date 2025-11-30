@@ -20,15 +20,22 @@
   width: 50%;
   margin: auto;
   height: 45px;
+  display: flex;
 }
 .qr_container_input {
   background: none;
-  width: 100%;
+  width: 80%;
   height: 100%;
   border: solid rgb(64, 63, 63);
   padding: 20px;
   color: white;
   border-radius: 25px;
+}
+.qr_create_btn{
+  width: 15%;
+  margin: auto;
+  height: 100%;
+  border-radius: 35px;
 }
 .qr_container_qr_code_div {
   width: 250px;
@@ -57,10 +64,24 @@
     body{
         width: auto;
     }
+    .qr_container {
+        padding: 20px;
+        height: auto;
+    }
     .qr_container_head{
         font-size: 25px;
     }
     .qr_container_input_div{
-        width: 100%;
+      width: 100%;
+      gap: 2%;
+    }
+    .qr_container_input {
+        width: 80%;
+    }
+    .qr_create_btn{
+      width: 22%;
+    }
+    .qr_container_qr_code_div {
+      margin-top: 10%;
     }
 }

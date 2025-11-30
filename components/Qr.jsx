@@ -4,6 +4,7 @@ import "./Qr.css"
 
 const Qr = () => {
   const [text, setText] = useState("");
+  const [inputVal, setInputVal] = useState("")
   return (
     <div className="qr_wrapper">
       <div className="qr_container">
@@ -15,9 +16,11 @@ const Qr = () => {
             type="text"
             className="qr_container_input"
             placeholder="Enter your Name or UPI"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
+            value={inputVal}
+            // onChange={e=>e.target.value}
+            onChange={(e) => setInputVal(e.target.value)}
           />
+          <button className="qr_create_btn" onClick={() => setText(inputVal)}>Create</button>
         </div>
         <div className="qr_container_qr_code_div">
             {text && <QRCodeCanvas value={text} className="qr_code" />} 
